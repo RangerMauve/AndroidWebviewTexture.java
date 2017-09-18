@@ -1,0 +1,36 @@
+apply plugin: 'com.android.library'
+
+android {
+    compileSdkVersion 24
+    buildToolsVersion '25.0.0'
+    defaultConfig {
+        minSdkVersion 19
+        targetSdkVersion 25
+        versionCode 3
+        versionName "3"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_7
+        targetCompatibility JavaVersion.VERSION_1_7
+    }
+    productFlavors {
+    }
+    lintOptions {
+        abortOnError false
+    }
+}
+
+dependencies {
+    provided files('./libs/UnityPlayer.jar') // Avoid redundant Unity Player in final application APK
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+
+    // https://mvnrepository.com/artifact/com.jcraft/jsch
+    //compile group: 'com.jcraft', name: 'jsch', version: '0.1.54'
+
+}

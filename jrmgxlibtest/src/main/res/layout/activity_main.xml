@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:id="@+id/activity_main"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="net.gangneux.dev.jrmgxlibtest.MainActivity">
+
+    <TextView
+        android:layout_width="500px"
+        android:layout_height="500px"
+        android:background="#0F0"
+        android:textColor="#F00"
+        android:textSize="64sp"
+        android:text="   HéLLO\n█BASE"
+        android:padding="0dp"
+        android:elegantTextHeight="true"
+        android:includeFontPadding="false"
+        android:layout_margin="0dp"
+
+        android:letterSpacing="1.3"
+        android:lineSpacingExtra="-100dp"
+        android:lineSpacingMultiplier="1"
+
+        android:shadowColor="#00F"
+        android:shadowRadius="5"
+        android:shadowDx="10"
+        android:shadowDy="10"
+
+        android:textScaleX="1"
+        />
+
+</RelativeLayout>
